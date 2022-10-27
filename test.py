@@ -9,9 +9,7 @@ from glob import glob
 from unittest import mock
 from functools import partial
 
-from solucion import *
-
-
+from persistencia import *
 
 
 def skipUnlessImplemented(obj):
@@ -82,7 +80,8 @@ def borrar_estado():
 leer_estado_pickle = partial(leer_estado_pickle, fichero=TEST_FICHERO)
 guardar_estado_pickle = partial(guardar_estado_pickle, fichero=TEST_FICHERO)
 
-class TestHabilidades(unittest.TestCase):
+
+class TestPersistencia(unittest.TestCase):
 
     def setUp(self):
         borrar_estado()
