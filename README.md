@@ -337,7 +337,7 @@ El código de partida, que también está disponible en la plantilla, es el sigu
 <img src="./img/python.png" align=right width=100px>
 
 ```python
-class ListaDeLaCompra(HabilidadCompleja):
+class ListaDeLaCompra(HabilidadSubcomandos):
   '''Gestión de lista de la compra que incluye excepciones'''
 
   def __init__(self, *args, **kwargs):
@@ -413,7 +413,7 @@ Se pide reemplazar las lı́neas marcadas con `raise NotImplementedError` con el
 
 Para practicar tanto los conceptos de subclases como diferentes opciones de persistencia, se propone implementar las siguientes clases:
 
-- `ListaContactos` una HabilidadCompleja que permite guardar contactos e información sobre ellos: números de teléfono, dirección, etc.
+- `ListaContactos` una HabilidadSubcomandos que permite guardar contactos e información sobre ellos: números de teléfono, dirección, etc.
 
 - `MultiAlmacen` un almacén que guarda los valores a varios almacenes internos. Sólo utiliza un almacén para la lectura: el primero de la lista de almacenes proporcionada.
 

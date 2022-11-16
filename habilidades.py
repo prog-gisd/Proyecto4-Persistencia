@@ -28,7 +28,7 @@ class Divisas(Habilidad):
         return round(float(cantidad) * self.tasa, 2)
 
 
-class HabilidadCompleja(Habilidad):
+class HabilidadSubcomandos(Habilidad):
     """Un tipo de habilidad que permite invocar varios sub-comandos"""
 
     def subcomandos(self):
@@ -54,7 +54,8 @@ class HabilidadCompleja(Habilidad):
             print(f'\t{sub}: {func.__doc__ or "No hay ayuda disponible"}')
 
 
-class ListaDeLaCompra(HabilidadCompleja):
+# Descomentar para desarrollar el apartado de Subcomandos
+class ListaDeLaCompra(HabilidadSubcomandos):
     """Gestión muy simple de lista de la compra"""
 
     def __init__(self, *args, **kwargs):
@@ -95,7 +96,7 @@ class Menu:
         for hab in habilidades:
             self.habilidades[hab.nombre] = hab
 
-    def ayuda(self, comando=None):
+    def ayuda(self, habilidad=None):
         """
         Muestra ayuda del uso del menú. Si no se especifica una habilidad,
         se muestra la ayuda general. Esta ayuda general muestra la lista
@@ -103,15 +104,15 @@ class Menu:
 
         Si se especifica una habilidad, se muestra su ayuda específica.
         """
-        if not comando:
+        if not habilidad:
             print("Habilidades disponibles:")
             for hab in self.habilidades.values():
                 print(f"\t{hab.nombre}:\t{hab.descripcion}")
             return
-        if comando not in self.habilidades:
-            print(f"Habilidad no encontrada: {comando}")
+        if habilidad not in self.habilidades:
+            print(f"Habilidad no encontrada: {habilidad}")
             return
-        self.habilidades[comando].ayuda()
+        self.habilidades[habilidad].ayuda()
 
     def lanzar(self):
         """Recibe instrucciones del usuario en bucle."""
@@ -215,7 +216,7 @@ def prueba_menu_simple():
     m.emular("ayuda bitcoin2euro")
 
 
-def prueba_menu_complejas():
+def prueba_menu_subcomandos():
     habilidades = [
         Divisas("bitcoin2euro", tasa=49929.38),
         Divisas("euro2bitcoin", tasa=1 / 49929.38),
@@ -229,9 +230,3 @@ def prueba_menu_complejas():
     m.emular("listadelacompra listar")
     m.emular("listadelacompra borrar 0")
     m.emular("listadelacompra listar")
-
-
-if __name__ == "__main__":
-    prueba_menu_simple()
-    print("#" * 10)
-    prueba_menu_complejas()
