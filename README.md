@@ -513,7 +513,7 @@ el comando <img src="./img/python.png" align=right width=100px>
 
 ```shell
 $ python --version
-Python 3.8.10
+Python 3.10.12
 ```
 
 Por otro lado, hay fragmentos de sesión del intérprete de comandos de python.
@@ -523,8 +523,7 @@ Podemos acceder al intérprete directamente ejecutando el comando Python en nues
 
 ```shell
 $ python
-Python 3.8.10 (default, Jun  2 2021, 10:49:15) 
-[GCC 9.4.0] on linux
+Python 3.10.12 (main, Jun 11 2023, 05:26:28) [GCC 11.4.0] on linux
 Type "help", "copyright", "credits" or "license" for more information.
 >>> 
 ```
@@ -556,7 +555,6 @@ def funcion(parametro):
 También utilizaremos notas para resaltar consejos o aspectos importantes:
 
 _**Nota**: todas las líneas ejecutadas durante una sesión de python o de consola se guardan en el historial. Se puede acceder a una línea anterior mediante las flechas del teclado o pulsando ```Ctrl+P``` repetidamente hasta llegar a la línea deseada._
-
 
 ## Enlaces
 <a name="pickle">1</a>: https://docs.python.org/3/library/pickle.html</br>
