@@ -120,5 +120,10 @@ venv.bak/
 .dmypy.json
 dmypy.json
 
+# Ignorar ficheros de estado
+*.json
+*.pickle
+*.txt
+
 # Pyre type checker
 .pyre/
