@@ -7,24 +7,22 @@
 
 ## Contenido
 
-- [Proyecto 4 - Persistencia](#proyecto-4---persistencia)
-  - [Contenido](#contenido)
-  - [Requisitos previos](#requisitos-previos)
-  - [Objetivos](#objetivos)
-  - [Introducción](#introducción)
-  - [Actividades del proyecto](#actividades-del-proyecto)
-    - [0. Descarga del proyecto](#0-descarga-del-proyecto)
-    - [1. Persistencia básica](#1-persistencia-básica)
-    - [2. Serialización en texto plano](#2-serialización-en-texto-plano)
-    - [3. Clase Almacén](#3-clase-almacén)
-    - [4. Habilidad lista de la compra con excepciones](#4-habilidad-lista-de-la-compra-con-excepciones)
-    - [5. Habilidad lista de la compra con persistencia](#5-habilidad-lista-de-la-compra-con-persistencia)
-    - [6. Actividades opcionales](#6-actividades-opcionales)
-  - [Entrega del proyecto](#entrega-del-proyecto)
-  - [Anexos](#anexos)
-    - [Evaluación](#evaluación)
-    - [Convenciones](#convenciones)
-  - [Enlaces](#enlaces)
+- [Requisitos previos](#requisitos-previos)
+- [Objetivos](#objetivos)
+- [Introducción](#introducción)
+- [Actividades del proyecto](#actividades-del-proyecto)
+  - [0. Descarga del proyecto](#0-descarga-del-proyecto)
+  - [1. Persistencia básica](#1-persistencia-básica)
+  - [2. Serialización en texto plano](#2-serialización-en-texto-plano)
+  - [3. Clase Almacén](#3-clase-almacén)
+  - [4. Habilidad lista de la compra con excepciones](#4-habilidad-lista-de-la-compra-con-excepciones)
+  - [5. Habilidad lista de la compra con persistencia](#5-habilidad-lista-de-la-compra-con-persistencia)
+  - [6. Actividades opcionales](#6-actividades-opcionales)
+- [Entrega del proyecto](#entrega-del-proyecto)
+- [Anexos](#anexos)
+  - [Evaluación](#evaluación)
+  - [Convenciones](#convenciones)
+- [Enlaces](#enlaces)
 
 ## Requisitos previos
 
@@ -37,7 +35,7 @@ En la realización de este proyecto se ponen en práctica conceptos abordados en
 -   Uso interactivo del intérprete de Python (REPL)
 -   Uso básico de un IDE (Visual Studio Code) para desarrollar y ejecutar código
 -   Uso de persistencia básica en disco
--   Uso de diferentes formatos de serialización (JSON, Pickle)
+-   Uso de diferentes formatos de serialización (texto plano, JSON, Pickle)
 -   Uso de excepciones
 -   Refuerzo del uso de clases para encapsular estado y comportamiento.
 -   Refuerzo de conceptos básicos de ingenierı́a de software como interfaces

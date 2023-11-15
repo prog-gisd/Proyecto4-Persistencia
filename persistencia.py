@@ -6,7 +6,7 @@ import shutil
 
 from datetime import datetime
 
-from habilidades import HabilidadCompleja
+from habilidades import HabilidadSubcomandos
 
 FICHERO_PICKLE = "estado.pickle"
 FICHERO_JSON = "estado.json"
@@ -106,7 +106,7 @@ class MultiAlmacen(Almacen):
         raise NotImplementedError
 
 
-class ListaDeLaCompra(HabilidadCompleja):
+class ListaDeLaCompra(HabilidadSubcomandos):
     """Gestión de lista de la compra que incluye excepciones"""
 
     def __init__(self, *args, **kwargs):
