@@ -17,7 +17,8 @@
   - [3. Clase Almacén](#3-clase-almacén)
   - [4. Habilidad lista de la compra con excepciones](#4-habilidad-lista-de-la-compra-con-excepciones)
   - [5. Habilidad lista de la compra con persistencia](#5-habilidad-lista-de-la-compra-con-persistencia)
-  - [6. Actividades opcionales](#6-actividades-opcionales)
+  - [6. Creación del menú](#6-creacion-del-menu)
+  - [7. Actividades opcionales](#7-actividades-opcionales)
 - [Entrega del proyecto](#entrega-del-proyecto)
 - [Anexos](#anexos)
   - [Evaluación](#evaluación)
@@ -407,7 +408,11 @@ class ListaDeLaCompraAlmacenada(ListaDeLaCompra):
 
 Se pide reemplazar las lı́neas marcadas con `raise NotImplementedError` con el código necesario para conseguir la funcionalidad.
 
-### 6. Actividades opcionales
+### 6. Creación del menú
+
+Cree un menú como los desarrollados en los proyectos anteriores para probar las funcionalidades de la nueva clase ``ListaDeLaCompraAlmacenada``.
+
+### 7. Actividades opcionales
 
 Para practicar tanto los conceptos de subclases como diferentes opciones de persistencia, se propone implementar las siguientes clases:
 
