@@ -19,7 +19,6 @@
   - [5. Habilidad lista de la compra con persistencia](#5-habilidad-lista-de-la-compra-con-persistencia)
   - [6. Creación del menú](#6-creacion-del-menu)
   - [7. Actividades opcionales](#7-actividades-opcionales)
-- [Entrega del proyecto](#entrega-del-proyecto)
 - [Anexos](#anexos)
   - [Evaluación](#evaluación)
   - [Convenciones](#convenciones)
@@ -430,9 +429,6 @@ Para practicar tanto los conceptos de subclases como diferentes opciones de pers
 
 - `AlmacenCSVBackupAvanzado` (avanzado) igual que `AlmacenCSVBackup`, pero añadiendo las columnas necesarias al fichero cada vez que se introduce un estado nuevo en lugar de ignorar la clave. Nótese que, en caso de que haya que añadir alguna columna nueva, se deberá recrear todo el fichero para añadir la columna a los estados anteriores. El valor por defecto si no existı́a la clave en un estado anterior será `None`.
 
-## Entrega del proyecto
-
-Para entregar el proyecto, se deberá subir a Moodle en la tarea "Entrega del proyecto 4".
 </br>
 </br>
 
