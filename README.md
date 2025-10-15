@@ -555,6 +555,10 @@ También utilizaremos notas para resaltar consejos o aspectos importantes:
 
 _**Nota**: todas las líneas ejecutadas durante una sesión de Python o de consola se guardan en el historial. Se puede acceder a una línea anterior mediante las flechas del teclado o pulsando ```Ctrl+P``` repetidamente hasta llegar a la línea deseada._
 
+### Entrega del proyecto
+
+Para la entrega final, solamente se deberá subir un único fichero comprimido en formato ZIP que contenga una carpeta por cada proyecto presentado. Cada carpeta debe incluir los ficheros correspondientes a ese proyecto. Es posible copiar o replicar cualquier fichero en las diferentes carpetas si se considera necesario para facilitar la organización. Esta entrega global se hará al finalizar todos los proyectos, siguiendo las indicaciones y fechas establecidas en Moodle.
+
 ## Enlaces
 <a name="pickle">1</a>: https://docs.python.org/3/library/pickle.html</br>
 <a name="json">2</a>: https://www.json.org </br>
