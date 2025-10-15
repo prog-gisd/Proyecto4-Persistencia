@@ -88,9 +88,9 @@ En ese caso, podrı́amos guardar nuestro contador (de tipo entero, `int`) en fo
 En ejecuciones posteriores podremos recuperar el valor del contador leyendo el fichero, y convirtiendo el texto al tipo que nos interesa (`int`), de forma similar a como hacíamos en el menú de proyectos anteriores.
 El código podrı́a ser el siguiente:
 
-<img src="./img/python.png" align=right width=100px>
+<img src="./img/.png" align=right width=100px>
 
-```python
+```
 import os
 FICHERO = 'estado.txt'
 
@@ -116,11 +116,11 @@ Si guardamos este código en un fichero (`estado_int.py`) y lo ejecutamos varias
 <img src="./img/shell.png" align=right width=100px>
 
 ```shell
-$ python estado_int.py
+$  estado_int.py
 El contador vale 0
-$ python estado_int.py
+$  estado_int.py
 El contador vale 1
-$ python estado_int.py
+$  estado_int.py
 El contador vale 2
 ```
 
@@ -131,9 +131,9 @@ Si cambiáramos en un editor el texto por `99`, si volvemos a ejecutar nuestro c
 <img src="./img/shell.png" align=right width=100px>
 
 ```shell
-$ python estado_int.py
+$  estado_int.py
 El contador vale 99
-$ python estado_int.py
+$  estado_int.py
 El contador vale 99
 ```
 
@@ -150,9 +150,9 @@ Por ejemplo, podríamos guardar un diccionario de diccionarios.__
 
 Utilizando las funciones del módulo `pickle`, se pide modificar el código de las siguientes funciones, definidas en el fichero `solucion.py`, para que nos permita utilizar cualquier objeto Python:
 
-<img src="./img/python.png" align=right width=100px>
+<img src="./img/.png" align=right width=100px>
 
-```python
+```
 import pickle
 import os
 
@@ -181,13 +181,13 @@ Una vez implementado el código, el resultado de ejecutarlo las primeras veces d
 <img src="./img/shell.png" align=right width=100px>
 
 ```shell
-$ python estado_pickle.py
+$  estado_pickle.py
 El estado es {}
-$ python estado_pickle.py
+$  estado_pickle.py
 El estado es {'contador': 1}
-$ python estado_pickle.py
+$  estado_pickle.py
 El estado es {'contador': 2}
-$ python estado_pickle.py
+$  estado_pickle.py
 El estado es {'contador': 3}
 ```
 
@@ -203,7 +203,7 @@ El formato Pickle es muy potente ya que nos permite serializar casi cualquier ob
 Como desventaja, este enfoque sólo funciona para guardar los tipos de objeto más básicos: números, cadenas de texto, listas y diccionarios. El formato que usaremos es JSON (JavaScript Object Notation)<sup>[2](#json)</sup>, que fue originalmente diseñado para JavaScript pero dada su gran popularidad hoy en dı́a puede ser utilizado desde cualquier lenguaje. En Python podemos leer este formato utilizando el módulo `json`, de la biblioteca estándar. El módulo nos da funciones para leer y escribir tanto desde cadenas de texto como desde un fichero. El formato JSON es muy parecido a la notación en Python. Podemos ver un ejemplo de uso a continuación, en el que partimos de un diccionario, lo serializamos a formato JSON (`json.dumps`), y después lo
 deserializamos de vuelta a Python (`json.loads`).
 
-<img src="./img/python-repl-vertical.png" align=right width=100px>
+<img src="./img/-repl-vertical.png" align=right width=100px>
 
 ```pycon
 >>> import json
@@ -222,9 +222,9 @@ Desde ficheros usarı́amos `json.load` y `json.dump`, respectivamente.__
 
 Se pide modificar el código a continuación para que permita guardar el estado del programa en un fichero JSON. El funcionamiento general del programa ha de ser idéntico al del apartado anterior.
 
-<img src="./img/python.png" align=right width=100px>
+<img src="./img/.png" align=right width=100px>
 
-```python
+```
 import json
 import os
 
@@ -260,9 +260,9 @@ nueva, a la que llamaremos Almacen. Esta clase incluirá un método para guardar
 A la hora de crear nuestras clases con persistencia, simplemente podremos proporcionarles una instancia de Almacen que se encargará de la persistencia. Esta clase se nos proporciona en la plantilla del ejercicio. También se proporcionan dos subclases. La
 primera, EnMemoria es una clase de ejemplo que simplemente utiliza su estado interno para guardar el estado, sin ningún tipo de persistencia. La segunda, es una subclase que utilizaremos en almacenes que escriban en fichero, y veremos su utilidad más adelante. El código se puede ver a continuación:
 
-<img src="./img/python.png" align=right width=100px>
+<img src="./img/.png" align=right width=100px>
 
-```python
+```
 class Almacen:
   '''Clase genérica para los almacenes de estado'''
 
@@ -298,9 +298,9 @@ class AlmacenFichero(Almacen):
 
 Se pide implementar las dos siguientes clases, utilizando los métodos del primer apartado:
 
-<img src="./img/python.png" align=right width=100px>
+<img src="./img/.png" align=right width=100px>
 
-```python
+```
 class AlmacenPickle(AlmacenFichero):
   '''Guarda el estado en un Pickle '''
   
@@ -332,9 +332,9 @@ Las excepciones a lanzar serán dos:
 
 El código de partida, que también está disponible en la plantilla, es el siguiente:
 
-<img src="./img/python.png" align=right width=100px>
+<img src="./img/.png" align=right width=100px>
 
-```python
+```
 class ListaDeLaCompra(HabilidadSubcomandos):
   '''Gestión de lista de la compra que incluye excepciones'''
 
@@ -380,9 +380,9 @@ En esta sección vamos a mejorar nuestra habilidad de `ListaDeLaCompra`, añadie
 
 El código de partida, que también está disponible en la plantilla, es el siguiente:
 
-<img src="./img/python.png" align=right width=100px>
+<img src="./img/.png" align=right width=100px>
 
-```python
+```
 class ListaDeLaCompraAlmacenada(ListaDeLaCompra):
   '''
   Habilidad igual en funcionamiento a ListaDeLaCompra, pero guardando
@@ -441,7 +441,7 @@ Los tests pueden invocarse en cualquier momento en la lı́nea de comando. Si to
 <img src="./img/shell.png" align=right width=100px>
 
 ```shell
-$ python test.py
+$  test.py
 test_persistencia (__main__.TestPersistencia)
 Comprobar que las funciones de leer y guardar funcionan
 ... no existe el fichero test.pickle
@@ -465,7 +465,7 @@ Si, por el contrario, hay algún fallo en el código, se mostrará el número de
 <img src="./img/shell.png" align=right width=100px>
 
 ```shell
-❯ python test.py | head -n 20
+❯  test.py | head -n 20
 test_persistencia (__main__.TestPersistencia)
 Comprobar que las funciones de leer y guardar funcionan ... ERROR
 test_persistencia_backup (__main__.TestPersistencia)
@@ -504,18 +504,18 @@ FAILED (errors=6, skipped=1)
 
 Durante el proyecto se utilizarán tres tipos de código. Por un lado, código a escribir en la línea de comandos
 (_command line_), también conocida como terminal o consola. En el ejemplo de abajo, vemos cómo ejecutamos
-el comando <img src="./img/python.png" align=right width=100px>
+el comando <img src="./img/.png" align=right width=100px>
 
-```python --version```, que imprime por pantalla la versión de Python en el sistema.
+``` --version```, que imprime por pantalla la versión de Python en el sistema.
 
 <img src="./img/shell.png" align=right width=100px>
 
 ```shell
-$ python --version
+$  --version
 Python 3.10.12
 ```
 
-Por otro lado, hay fragmentos de sesión del intérprete de comandos de python.
+Por otro lado, hay fragmentos de sesión del intérprete de comandos de Python.
 Podemos acceder al intérprete directamente ejecutando el comando Python en nuestra terminal:
 
 <img src="./img/shell.png" align=right width=100px>
@@ -533,7 +533,7 @@ Las líneas introducidas por el usuario son las que empiezan con "```>>>```" o "
 <img src="./img/python-repl-vertical.png" align=right width=100px>
 
 ```pycon
-Esto es código python
+Esto es código Python
 >>> a = 2
 >>> for i in range(a):
 ...     print(i)
@@ -553,7 +553,7 @@ def funcion(parametro):
 
 También utilizaremos notas para resaltar consejos o aspectos importantes:
 
-_**Nota**: todas las líneas ejecutadas durante una sesión de python o de consola se guardan en el historial. Se puede acceder a una línea anterior mediante las flechas del teclado o pulsando ```Ctrl+P``` repetidamente hasta llegar a la línea deseada._
+_**Nota**: todas las líneas ejecutadas durante una sesión de Python o de consola se guardan en el historial. Se puede acceder a una línea anterior mediante las flechas del teclado o pulsando ```Ctrl+P``` repetidamente hasta llegar a la línea deseada._
 
 ## Enlaces
 <a name="pickle">1</a>: https://docs.python.org/3/library/pickle.html</br>
